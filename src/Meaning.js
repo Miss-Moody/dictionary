@@ -1,5 +1,6 @@
 import React from "react";
 import Subsynonyms from "./Subsynonyms";
+import Synonyms from "./Synonyms";
 
 //  props.meaning.definitions.map(function(definition, index)) loops through the array of all definitions of the word (if there is more that 1)
 export default function Meaning(props) {
@@ -22,16 +23,7 @@ export default function Meaning(props) {
 					</div>
 				);
 			})}
-			<span>Synonyms:</span>
-			{props.meaning.synonyms.map(function (synonym, index) {
-				return (
-					<div className="Synonyms">
-						<ul>
-							<li key={index}>{synonym}</li>
-						</ul>
-					</div>
-				);
-			})}
+			<Synonyms synonyms={props.meaning.synonyms} />
 		</div>
 	);
 }
