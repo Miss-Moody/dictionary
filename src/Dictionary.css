@@ -6,21 +6,58 @@
 	background: #f4fcd9;
 }
 
+.Dictionary h4 {
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.Dictionary input {
+	font-size: 18px;
+	background: #f4fcd9;
+	padding: 10px 15px;
+	border: none;
+}
+
+.Dictionary input:focus {
+	border: none;
+	box-shadow: 0 0 0 0.25rem rgb(197 216 164 / 25%);
+}
+
 .Dictionary section:last-child {
 	border-bottom: none;
 }
 
-section.search {
+.Dictionary section.search {
 	background: #bb9981;
 	border-bottom: none;
 	margin-bottom: 20px;
 }
 
-.keyword-searchfield {
-	width: 30%;
+.Dictionary .container {
+	margin: 0;
+	padding: 0;
+}
+
+.Dictionary .keyword-searchfield {
 	display: inline-block;
 }
 
-.keyword-search-button {
+.Dictionary .keyword-search-button {
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	background: #534340;
+	color: #f4fcd9;
+	padding: 11px 25px;
+	transition: all 100ms ease-in-out;
 	display: inline-block;
+}
+
+.Dictionary .keyword-search-button:hover {
+	opacity: 0.8;
+}
+.Dictionary .keyword-search-button:focus {
+	border: none;
+	box-shadow: 0 0 0 0.25rem rgb(197 216 164 / 25%);
 }

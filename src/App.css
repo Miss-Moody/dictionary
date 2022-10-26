@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Love+Ya+Like+A+Sister&display=swap");
+.App {
+	max-width: 960px;
+	margin: 0 auto;
+}
 
 body {
 	background: #c5d8a4;
@@ -7,22 +11,28 @@ body {
 }
 
 a {
-	color: #628e90;
+	color: #a38675;
 	text-decoration: none;
 	transition: all 100ms ease-in-out;
 }
 
 a:hover {
-	color: #628e90;
+	color: #a38675;
 	text-decoration: underline;
 }
 
 .App-header {
-	margin: 40px 0 10px 0;
+	margin: 40px 0 20px 0;
 	font-family: "Love Ya Like A Sister", cursive;
 	font-size: 40px;
+	text-align: center;
 }
+
+.App-header i {
+	margin-right: 10px;
+}
+
 .App-footer {
 	text-align: center;
-	margin: 40px 0 10px 0;
+	margin: 40px 0 20px 0;
 }

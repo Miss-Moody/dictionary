@@ -1,0 +1,12 @@
+.Subsynonyms-title {
+	color: #95ba50;
+}
+
+.Subsynonyms li {
+	display: inline-block;
+	padding: 0 5px;
+	border-radius: 5px;
+	background-color: #ebfccf;
+	margin-right: 15px;
+	margin-top: 5px;
+}
