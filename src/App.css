@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Love+Ya+Like+A+Sister&display=swap");
+
+body {
+	background: #c5d8a4;
+	color: #534340;
+	font-family: "Lato", sans-serif;
+}
+
+a {
+	color: #628e90;
+	text-decoration: none;
+	transition: all 100ms ease-in-out;
+}
+
+a:hover {
+	color: #628e90;
+	text-decoration: underline;
+}
+
+.App-header {
+	margin: 40px 0 10px 0;
+	font-family: "Love Ya Like A Sister", cursive;
+	font-size: 40px;
+}
 .App-footer {
 	text-align: center;
-	margin: 30px 0;
+	margin: 40px 0 10px 0;
 }

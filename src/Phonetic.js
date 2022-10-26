@@ -9,11 +9,8 @@ export default function Phonetic(props) {
 	if (props.phonetic.audio) {
 		return (
 			<div className="Phonetic">
-				<a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-					Listen
-				</a>
 				<button onClick={playAudio} type="button">
-					Play Audio
+					<i class="fa-solid fa-volume-low"></i>
 				</button>
 				<br />
 				{props.phonetic.text}
