@@ -14,7 +14,14 @@ function App() {
 				</main>
 				<footer className="App-footer">
 					<small>
-						Coded by{" "}
+						<a
+							href="https://github.com/Miss-Moody/dictionary"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Coded
+						</a>{" "}
+						by{" "}
 						<a
 							href="https://www.linkedin.com/in/olena-k-97ab18162/"
 							target="_blank"
