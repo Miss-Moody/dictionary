@@ -6,7 +6,6 @@ import "./Results.css";
 //by using props.results.meanings.map we are looping through all existing meanings of the word, since in most cases words have more than one meaning (we can see it by logging the results object)
 export default function Results(props) {
 	if (props.results) {
-		console.log(props.results);
 		return (
 			<div className="Results">
 				<section>

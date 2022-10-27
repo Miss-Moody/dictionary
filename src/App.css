@@ -36,3 +36,10 @@ a:hover {
 	text-align: center;
 	margin: 40px 0 20px 0;
 }
+
+@media (max-width: 768px) {
+	.App-header {
+		margin: 40px 0 20px 0;
+		font-size: 28px;
+	}
+}

@@ -23,10 +23,6 @@
 	box-shadow: 0 0 0 0.25rem rgb(197 216 164 / 25%);
 }
 
-.Dictionary section:last-child {
-	border-bottom: none;
-}
-
 .Dictionary section.search {
 	background: #bb9981;
 	border-bottom: none;
@@ -60,4 +56,8 @@
 .Dictionary .keyword-search-button:focus {
 	border: none;
 	box-shadow: 0 0 0 0.25rem rgb(197 216 164 / 25%);
+}
+
+.Dictionary .column-2 {
+	padding-left: 0px;
 }

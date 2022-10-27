@@ -6,8 +6,8 @@ function App() {
 		<div className="App">
 			<div className="container">
 				<header className="App-header">
-					<i class="fa-solid fa-book"></i> Learn the meaning and phonetics of
-					words
+					<i className="fa-solid fa-book"></i> Learn the meaning and phonetics
+					of words
 				</header>
 				<main>
 					<Dictionary defaultKeyword="kitten" />
