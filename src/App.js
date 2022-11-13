@@ -16,7 +16,7 @@ function App() {
 					<small>
 						Coded by{" "}
 						<a
-							href="https://www.linkedin.com/in/olena-k-97ab18162/"
+							href="https://www.linkedin.com/in/olena-moody/"
 							target="_blank"
 							rel="noreferrer"
 						>
