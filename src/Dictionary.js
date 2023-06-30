@@ -16,23 +16,22 @@ export default function Dictionary(props) {
 	}
 
 	// whenever we get responce from the picture API (Pexel), we set the value of the photos variable to response.data.photos
-	function handlePexelsResponse(response) {
+	function handleSheCodesImgResponse(response) {
 		setPhotos(response.data.photos);
 	}
 
-	// the function makes an API call to https://dictionaryapi.dev and tp the picture API (pexels)
+	// the function makes an API call to https://dictionaryapi.dev and to the pictures API (https://api.shecodes.io/images/)
 	function search() {
 		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 		axios.get(apiUrl).then(handleDictionaryResponse);
 
-		let pexelsApiKey =
-			"563492ad6f917000010000017a336706e8a2496a949b9c92c6d22c7d";
-		let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+		let sheCodesImgApiKey = "0543f6a2e174c9b13f3530o4t16fabe9";
+		let sheCodesImgApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${sheCodesImgApiKey}`;
 		axios
-			.get(pexelsApiUrl, {
-				headers: { Authorization: `Bearer ${pexelsApiKey}` },
+			.get(sheCodesImgApiUrl, {
+				headers: { Authorization: `Bearer ${sheCodesImgApiKey}` },
 			})
-			.then(handlePexelsResponse);
+			.then(handleSheCodesImgResponse);
 	}
 
 	// whenever a user submits the search form the function calls the search() function
